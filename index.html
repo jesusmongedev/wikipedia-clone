@@ -5,16 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wikipedia</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="central-textlogo">
       <img
+        class="central-featured-logo"
         src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png"
+        srcset="
+          https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@1.5x.png 1.5x,
+          https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@2x.png   2x
+        "
+        width="200"
+        height="183"
         alt="wikipedia"
       />
-      <h1><span>Wikipedia</span> <strong>La enciclopedia libre</strong></h1>
+      <h1 class="central-textlogo-wrapper">
+        <span
+          class="central-textlogo__image sprite svg-wikipedia_wordmark"
+        ></span>
+        <strong class="localized-slogan">La enciclopedia libre</strong>
+      </h1>
     </header>
-    <div>
+    <!-- <div class="central-featured">
       <div>
         <a href="#"
           ><strong>Español</strong
@@ -96,5 +109,30 @@
         >
       </div>
     </div>
+    <div class="search-container">
+      <div class="search-input">
+        <input type="search" id="" />
+        <div class="styled-select">
+          <div class="hide-arrow">
+            <label for=""></label>
+            <select name="" id="">
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <i class="sprite"></i>
+          </div>
+          <button><i class="sprite">Search</i></button>
+        </div>
+      </div>
+    </div>
+    <div class="lang-list-button-wrapper">
+      <button>
+        <i class="lang-list-button"></i><span>Leer wikipedia en tu idioma</span
+        ><i class="srpite"></i>
+      </button>
+    </div> -->
   </body>
 </html>
