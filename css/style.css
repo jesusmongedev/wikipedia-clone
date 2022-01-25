@@ -96,13 +96,13 @@ img {
   margin-bottom: 16px;
 }
 .central-featured-lang a {
-  display: block;
+  /* display: block; */
   white-space: normal;
   font-size: 1.56rem;
   text-decoration: none;
 }
 .central-featured-lang a strong {
-  display: block;
+  /* display: block; */
   color: #3366cc;
   font-size: 1.4rem;
 }
@@ -178,9 +178,8 @@ button .svg-search-icon {
 /* LANGUAGE BUTTON WRAPPER */
 .lang-list-button-wrapper {
   position: absolute;
-  bottom: calc(100vh - 520px);
+  bottom: -38em;
   right: calc(50% - 128.805px);
-  text-align: center;
 }
 .lang-list-button-wrapper .lang-list-button {
   position: relative;
@@ -296,6 +295,6 @@ button .svg-search-icon {
     text-align: center;
   }
   .lang-list-button-wrapper {
-    bottom: calc(100vh - 535px);
+    bottom: -8em;
   }
 }
