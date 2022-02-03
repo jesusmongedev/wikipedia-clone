@@ -91,10 +91,14 @@ img {
   top: auto;
   left: auto;
   right: auto;
-  height: 6.4rem;
+  height: 4.5rem;
   width: 33%;
   padding: 0 1.6rem;
   margin-bottom: 16px;
+  transition: 0.3s all ease;
+}
+.central-featured-lang:hover {
+  background-color: #e4e4e4;
 }
 .central-featured-lang a {
   /* display: block; */
@@ -143,6 +147,15 @@ img {
   font-size: 1.6rem;
   line-height: 1.6;
 }
+.search-input input:focus {
+  outline-color: #3366cc;
+}
+.search-input button {
+  cursor: pointer;
+}
+.search-input button:hover {
+  opacity: 0.85;
+}
 .search-input .styled-select {
   display: block;
   position: absolute;
@@ -168,10 +181,9 @@ select {
   z-index: 2;
   background-color: #3366cc;
   border-width: inherit;
-  color: transparent;
 }
 button .svg-search-icon {
-  padding: 0.3em 1.5em;
+  padding: 0.15em 1.5em;
   margin: 0 0 0 1.25em;
   background-position: 0 -697px;
 }
@@ -197,6 +209,13 @@ button .svg-search-icon {
 .lang-list-button i {
   display: inline-block;
   vertical-align: middle;
+}
+.lang-list-button {
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+.lang-list-button:hover {
+  background-color: transparent;
 }
 .svg-language-icon {
   background-position: 0 -617px;
@@ -277,7 +296,6 @@ button .svg-search-icon {
 .projects-items-description {
   flex: 1;
   text-align: left;
-  line-height: 2rem;
 }
 .projects-items-description h3 {
   font-size: 1.3rem;
@@ -400,16 +418,6 @@ button .svg-search-icon {
   width: 110px;
   height: 38px;
 }
-/* .wikipedia-app-container div {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  text-align: left;
-  background-color: #000;
-  border-radius: 4px;
-  color: #fff;
-  padding: 0.5em;
-} */
 
 /* FOOTER */
 footer {
@@ -530,6 +538,7 @@ footer > a {
     /* overflow: hidden; */
     padding: 4.16rem 1.28rem 1.28rem;
     display: inline-block;
+    line-height: 2rem;
   }
   .projects-description {
     width: 35%;
@@ -538,6 +547,7 @@ footer > a {
     margin-bottom: 3.2rem;
     vertical-align: top;
     display: flex;
+    gap: 1em;
     text-align: left;
   }
   .wikipedia-app-section {
@@ -546,8 +556,39 @@ footer > a {
     clear: left;
     margin-bottom: 3.2rem;
     vertical-align: top;
+    text-align: left;
+  }
+  .wikipedia-app-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex: 1;
+  }
+  .wikipedia-app-section h3 span {
+    flex: 1;
+  }
+  .wikipedia-app-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.25em;
+  }
+  .footer-sidebar-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5.5rem;
+    gap: 1em;
+    align-items: baseline;
   }
   .projects-items-container {
     width: 65%;
+  }
+  .footer-sidebar-icon {
+    transform: scale(1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .wikipedia-projects-container {
+    margin-left: 6rem;
+    margin-right: 1rem;
   }
 }
