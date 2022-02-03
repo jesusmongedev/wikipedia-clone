@@ -222,7 +222,8 @@ button .svg-search-icon {
 
 /* MAIN WIKIPEDIA PROJECTS CONTAINER */
 .wikipedia-projects-container {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   margin-top: 6em;
   font-size: 1.3rem;
 }
@@ -351,6 +352,7 @@ button .svg-search-icon {
   padding: 0.5em;
   font-size: 1.25rem;
   text-align: center;
+  order: 1;
 }
 .footer-sidebar-icon {
   display: inline-block;
@@ -376,11 +378,11 @@ button .svg-search-icon {
   line-height: 1.75rem;
   margin-bottom: 1em;
 }
-/* .wikipedia-app-container {
+.wikipedia-app-container {
   display: flex;
   gap: 1em;
   justify-content: center;
-} */
+}
 .wikipedia-app-container li {
   display: inline-block;
 }
@@ -423,7 +425,7 @@ footer > a {
   color: #3366cc;
 }
 
-/* MEDIA QUERIES */
+/* TABLET MEDIA QUERIES */
 @media (min-width: 480px) {
   .central-textlogo {
     position: relative;
@@ -520,5 +522,32 @@ footer > a {
   }
   .projects-items-container article {
     width: 30%;
+  }
+}
+/* LAPTOP MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .wikipedia-projects-container {
+    /* overflow: hidden; */
+    padding: 4.16rem 1.28rem 1.28rem;
+    display: inline-block;
+  }
+  .projects-description {
+    width: 35%;
+    float: left;
+    clear: left;
+    margin-bottom: 3.2rem;
+    vertical-align: top;
+    display: flex;
+    text-align: left;
+  }
+  .wikipedia-app-section {
+    width: 35%;
+    float: left;
+    clear: left;
+    margin-bottom: 3.2rem;
+    vertical-align: top;
+  }
+  .projects-items-container {
+    width: 65%;
   }
 }
