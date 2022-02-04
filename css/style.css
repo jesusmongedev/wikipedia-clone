@@ -91,7 +91,7 @@ img {
   top: auto;
   left: auto;
   right: auto;
-  height: 4.5rem;
+  height: 6rem;
   width: 33%;
   padding: 0 1.6rem;
   margin-bottom: 16px;
@@ -399,6 +399,7 @@ button .svg-search-icon {
 .wikipedia-app-container {
   display: flex;
   gap: 1em;
+  margin-top: 1em;
   justify-content: center;
 }
 .wikipedia-app-container li {
@@ -473,6 +474,7 @@ footer > a {
     position: absolute;
     width: 156px;
     width: 15.6rem;
+    height: 4.5rem;
   }
   .lang-1 {
     top: 0;
@@ -569,6 +571,7 @@ footer > a {
   }
   .wikipedia-app-container {
     flex-wrap: wrap;
+    margin-top: 0;
     justify-content: flex-start;
     gap: 0.25em;
   }
